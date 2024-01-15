@@ -1,0 +1,16 @@
+extends layout 
+
+block content 
+    h1 Filtered Movies 
+    if movies == 'No movies'
+        p There are no movies 
+    else 
+        each m in movies 
+            Strong ID: #{m.id}
+            p Name: #{m.name} 
+            p Description: #{m.description} 
+            p Year: #{m.year} 
+            p Rating: #{m.rating} 
+            ul 
+                each g in m.genres 
+                    li #{g} 

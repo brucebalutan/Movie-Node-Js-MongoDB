@@ -1,0 +1,57 @@
+//- Defines doctype
+doctype html
+//- Defines top level html
+html
+  //- Start head
+  head
+    //- Define title and import stylesheet
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    style. 
+      body {
+        background-color: #92a8d1;
+      }
+      nav {
+        padding: 0.5rem;
+      }
+      a {
+        padding: 5rem;
+        text-decoration: none;
+        color: black;
+        size: 50px;
+      }
+      p {
+        margin-left: 1rem;
+        padding-left: 1rem;
+      }
+      li {
+        padding-left:3rem;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      input {
+        margin:1rem;
+      }
+      label {
+        margin: 1rem;
+        padding: 1rem;
+      }
+      h1 {
+        margin: 1rem;
+      }
+  
+  //- Use include for partial template
+  include partials/navbar
+  br
+
+  //- Block to be overriden when inherited
+  body
+    block content
+  br
+  br
+
+//- Import JQuery and main.js
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+script(type='text/javascript', src="/js/main.js")
+

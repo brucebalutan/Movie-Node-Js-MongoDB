@@ -1,0 +1,11 @@
+ynav
+    a(href="/") Home
+    if user
+        a(href="/movies/add") Add movie
+        a(href="/users/logout") Logout
+        a(href="/movies/search") Search 
+    else
+        a(href="/movies/search") Search
+        a(href="/users/register") Register 
+        a(href="/users/login") Login 
+    br

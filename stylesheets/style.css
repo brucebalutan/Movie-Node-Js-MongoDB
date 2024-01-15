@@ -1,0 +1,47 @@
+body {
+    background-color: #92a8d1;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+a {
+    padding: 5rem;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+li {
+    padding-left:3rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    margin:1rem;
+}
+
+label {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+h5 {
+    margin: 1rem;
+}
+
+img {
+    padding-left: 40rem;
+}
